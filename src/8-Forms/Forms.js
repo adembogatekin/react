@@ -4,22 +4,22 @@ import MyFormik from './FormikYup/MyFormik'
 
 const Forms = () => {
 
-    // const [name,setName] = useState("")
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     alert(`The name you entered was : ${name}`)
-    // }
-    // const [inputs,setInputs] = useState({})
+    const [name,setName] = useState("")
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`The name you entered was : ${name}`)
+    }
+    const [inputs,setInputs] = useState({})
 
-    // const handleChange = (event) => {
-    //     const name = event.target.name;
-    //     const value = event.target.value;
-    //     setInputs((values) => ({...values, [name]:value}))
-    // }
-    // const handleSubmit2 = (event) => {
-    //     event.preventDefault();
-    //     console.log(inputs)
-    // }
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs((values) => ({...values, [name]:value}))
+    }
+    const handleSubmit2 = (event) => {
+        event.preventDefault();
+        console.log(inputs)
+    }
     // const [textarea,setTextarea] = useState("burası bir textarea içeriğidir")
     // const handleChange =(event) => {
     //     setTextarea(event.target.value)
@@ -30,12 +30,12 @@ const Forms = () => {
     // }
   return (
     <div>
-        {/* <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <label>Enter your name:</label>
             <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
             <input type="submit" />
-        </form> */}
-        {/* <form onSubmit={handleSubmit2}>
+        </form>
+        <form onSubmit={handleSubmit2}>
             <label>
                 Enter your name:
             </label>
@@ -56,7 +56,7 @@ const Forms = () => {
                 onChange={handleChange}
             />
             <input type="submit" />
-        </form> */}
+        </form>
         {/* <textarea value={textarea} onChange={handleChange}/> */}
         {/* <form>
             <select value={myCar} onChange={handleChange}>
@@ -65,7 +65,7 @@ const Forms = () => {
                 <option value="Fiat">Fiat</option>
             </select>
         </form> */}
-        <MyFormik />
+        {/* <MyFormik /> */}
     </div>
   )
 }

@@ -7,10 +7,10 @@
 // import Lists from "./5-Lists/Lists"
 // import UseStateHook from './6-UseStateHook/UseStateHook';
 // import UseEffectHook from './7-UseEffectHook/UseEffectHook';
-// import Forms from './8-Forms/Forms';
+import Forms from './8-Forms/Forms';
 // import Router from './9-Router/Router';
 // import UseContext from './10-UseContextHook/UseContext';
-import CSSStyling from './11-CSSStyling/CSSStyling';
+// import CSSStyling from './11-CSSStyling/CSSStyling';
 
 import './App.css';
 
@@ -25,10 +25,10 @@ function App() {
     {/* <Lists/> */}
     {/* <UseStateHook /> */}
     {/* <UseEffectHook/> */}
-    {/* <Forms /> */}
+    <Forms />
     {/* <Router/> */}
     {/* <UseContext/> */}
-    <CSSStyling/>
+    {/* <CSSStyling/> */}
     </div>
   );
 }
